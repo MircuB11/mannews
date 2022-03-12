@@ -9,7 +9,7 @@
 <body>
 
 <body bgcolor="steelblue">
-
+s
     <h1>
     Man News
     </h1>
