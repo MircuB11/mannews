@@ -1,2 +1,1 @@
 # mannews
-mannews says news
