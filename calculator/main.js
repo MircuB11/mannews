@@ -11,22 +11,25 @@ function adunare(){
         document.querySelector('#rez').innerHTML="guh"
         return
     }
-    document.querySelector('#rez').innerHTML="Rezultatul este: "+parseInt(nr1.value)+parseInt(nr2.value)
+    document.querySelector('#rez').innerHTML="Rezultatul este: "+(parseInt(nr1.value)+parseInt(nr2.value))
 }
+
 function scadere(){
     if(nr1.value===""||nr2.value===""){
         document.querySelector('#rez').innerHTML="guh"
         return
     }
-    document.querySelector('#rez').innerHTML="Rezultatul este: "+parseInt(nr1.value)-parseInt(nr2.value)
+    document.querySelector('#rez').innerHTML="Rezultatul este: "+(nr1.value-nr2.value)
 }
+
 function inmultire(){
     if(nr1.value===""||nr2.value===""){
         document.querySelector('#rez').innerHTML="guh"
         return
     }
-    document.querySelector('#rez').innerHTML="Rezultatul este: "+parseInt(nr1.value)*parseInt(nr2.value);
+    document.querySelector('#rez').innerHTML="Rezultatul este: "+nr1.value*nr2.value;
 }
+
 btn1.addEventListener('click', adunare)
 btn2.addEventListener('click', scadere)
 btn3.addEventListener('click', inmultire)
