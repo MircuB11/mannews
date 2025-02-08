@@ -39,7 +39,9 @@ function afisare(){
   for(let i=0;i<keys.length;i++){
     let key=keys[i]
     let node=document.createElement('li')
-    node.style.backgroundColor='red'
+    if(keys[i].value="complete"){node.style.backgroundColor='lime'}
+    else {node.style.backgroundColor='red'}
+    
     node.innerHTML=key
     list.appendChild(node)
   }
