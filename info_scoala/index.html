@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro" style="background-color: rgb(127, 227, 240);">
+<head>
+    <title>Cod proiect</title>
+</head>
+<body>
+    <pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int i,t=5;
+bool corect=true;
+
+int main() {
+
+    string orar[5]={"fizica","romana","mate","chimie","informatica"};
+    string ghiozdan[5];
+    string verificare[5];
+
+    cout&lt;&lt;"Orarul pentru azi:"&lt;&lt;endl;
+    for(i=0;i&lt;5;i++){
+        cout&lt;&lt;"- "&lt;&lt;orar[i]&lt;&lt;endl;
+    }
+
+    cout&lt;&lt;"Introdu cartile in ghiozdan in ordinea corecta :"&lt;&lt;endl;
+    for(i=0;i&lt;5;i++){
+        string input;
+        cin&gt;&gt;input;
+        ghiozdan[i]=input;
+    }
+
+    for(i=0;i&lt;5;i++){
+        verificare[i]=orar[i];
+    }
+
+    for(i=0;i&lt;5;i++){
+        t--;
+        if (ghiozdan[t]!=verificare[i]){
+            corect=false;
+            break;
+        }
+    }
+
+    if(corect){
+        cout&lt;&lt;endl&lt;&lt;"Ai introdus cartile cum trebuie!";
+    }else{
+        cout&lt;&lt;endl&lt;&lt;"Nu ai introdus cartile cum trebuie!";
+    }
+
+    return 0;
+}
+    </pre>
+</body>
+</html>
